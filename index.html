@@ -1,294 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FieldOps Pro | Construction Field Operations Platform</title>
-  <meta name="description" content="FieldOps Pro is a construction technology platform designed to connect critical field workflows, improve visibility, coordination and project decision-making.">
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #07111f;
-      color: #ffffff;
-      line-height: 1.6;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 24px 0;
-    }
-
-    .logo {
-      font-size: 24px;
-      font-weight: 700;
-    }
-
-    .status {
-      font-size: 13px;
-      border: 1px solid #334155;
-      padding: 7px 12px;
-      border-radius: 20px;
-      color: #cbd5e1;
-    }
-
-    header {
-      padding: 90px 0 110px;
-    }
-
-    .eyebrow {
-      color: #38bdf8;
-      font-weight: 700;
-      margin-bottom: 15px;
-    }
-
-    h1 {
-      font-size: clamp(44px, 8vw, 82px);
-      line-height: 1.05;
-      max-width: 900px;
-      margin-bottom: 25px;
-    }
-
-    .hero-text {
-      font-size: 21px;
-      color: #cbd5e1;
-      max-width: 760px;
-    }
-
-    .tagline {
-      margin-top: 30px;
-      font-weight: 700;
-      font-size: 18px;
-    }
-
-    section {
-      padding: 80px 0;
-      border-top: 1px solid #1e293b;
-    }
-
-    h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
-
-    section p {
-      color: #cbd5e1;
-      max-width: 850px;
-      font-size: 18px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 18px;
-      margin-top: 35px;
-    }
-
-    .card {
-      background: #0f1d2e;
-      border: 1px solid #24364d;
-      border-radius: 14px;
-      padding: 24px;
-      min-height: 120px;
-    }
-
-    .card h3 {
-      margin-bottom: 8px;
-      font-size: 18px;
-    }
-
-    .card p {
-      font-size: 15px;
-      color: #94a3b8;
-    }
-
-    .stage {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 10px 16px;
-      background: #0c4a6e;
-      border-radius: 8px;
-      font-weight: 700;
-    }
-
-    .company {
-      background: #0f1d2e;
-      padding: 35px;
-      border-radius: 16px;
-      margin-top: 30px;
-      border: 1px solid #24364d;
-    }
-
-    footer {
-      padding: 40px 0;
-      color: #64748b;
-      font-size: 14px;
-      border-top: 1px solid #1e293b;
-    }
-
-    strong {
-      color: #ffffff;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101c2c">
+<meta name="description" content="FieldOps Pro — منصة ذكية لعمليات المشاريع والإنشاءات، من الميدان إلى قرار الإدارة.">
+<title>FieldOps Pro — مركز قيادة المشاريع</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap');
+:root{--navy:#101c2c;--navy2:#17283d;--panel:#fff;--canvas:#f3f5f7;--ink:#182638;--muted:#758397;--line:#e4e9ef;--teal:#087f8c;--teal-soft:#e3f4f2;--lime:#d9f36a;--amber:#b7791f;--amber-soft:#fff4dc;--red:#bd4b4b;--red-soft:#fdeaea;--blue:#456fca;--shadow:0 8px 26px rgba(21,38,59,.045)}
+*{box-sizing:border-box}body{margin:0;background:var(--canvas);color:var(--ink);font-family:'IBM Plex Sans Arabic',Inter,Arial,sans-serif;font-size:14px}button,input,select{font:inherit}button{cursor:pointer}.shell{min-height:100vh;display:grid;grid-template-columns:250px minmax(0,1fr)}.sidebar{background:var(--navy);color:#dce5ef;padding:24px 16px;display:flex;flex-direction:column;gap:26px}.brand{display:flex;align-items:center;gap:11px;padding:0 10px}.brand-mark{width:39px;height:39px;border-radius:12px;background:var(--lime);color:var(--navy);display:grid;place-items:center;font-weight:800;font-size:19px;letter-spacing:-2px}.brand-name{font-family:Inter,sans-serif;font-size:17px;font-weight:800;letter-spacing:-.5px;color:#fff;direction:ltr}.brand-name span{color:var(--lime)}.brand-caption{font-size:10px;color:#91a3b9;margin-top:3px}.workspace{border:1px solid #34465c;background:#17283d;border-radius:12px;padding:12px;display:flex;align-items:center;gap:10px}.workspace-icon{width:35px;height:35px;border-radius:9px;background:#29435b;display:grid;place-items:center;color:var(--lime);font-weight:700}.workspace small{display:block;color:#91a3b9;font-size:10px;margin-bottom:3px}.workspace strong{font-size:12px}.workspace .chevron{margin-right:auto;color:#91a3b9}.nav-label{font-size:10px;letter-spacing:.7px;color:#7f93aa;padding:0 12px;margin:3px 0 8px}.nav{display:grid;gap:4px}.nav button{border:0;background:transparent;color:#b8c6d6;border-radius:9px;padding:11px 12px;text-align:right;display:flex;align-items:center;gap:12px;font-size:13px;transition:.18s}.nav button:hover,.nav button.active{background:#263a50;color:#fff}.nav button.active{box-shadow:inset -3px 0 var(--lime)}.nav .ico{width:19px;text-align:center;font-size:16px;opacity:.95}.nav .count{margin-right:auto;border-radius:20px;background:#3b2d2b;color:#ffb4a8;padding:2px 7px;font-size:10px}.side-bottom{margin-top:auto}.ai-side{padding:15px;border:1px solid #34465c;border-radius:12px;background:linear-gradient(145deg,#1a3144,#142437)}.ai-side .spark{color:var(--lime);font-size:18px}.ai-side strong{display:block;color:#fff;margin:7px 0}.ai-side p{font-size:11px;color:#9eafc2;line-height:1.8;margin:0 0 12px}.side-cta{width:100%;background:var(--lime);color:var(--navy);border:0;border-radius:8px;padding:9px;font-weight:700;font-size:12px}.profile{display:flex;align-items:center;gap:10px;border-top:1px solid #304257;margin-top:16px;padding:16px 7px 0}.avatar{width:34px;height:34px;border-radius:50%;background:#d9e8ee;color:#24475c;display:grid;place-items:center;font-weight:700}.profile strong{display:block;font-size:12px;color:#fff}.profile small{color:#90a2b7;font-size:10px}.main{min-width:0}.topbar{height:76px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 34px;gap:16px}.crumb{color:var(--muted);font-size:12px}.crumb b{color:var(--ink);font-weight:600}.top-actions{display:flex;align-items:center;gap:10px}.icon-btn{width:37px;height:37px;border:1px solid var(--line);border-radius:10px;background:#fff;color:#526176;position:relative}.dot{position:absolute;width:7px;height:7px;border-radius:50%;background:#e05d52;top:7px;left:8px;border:1px solid #fff}.top-divider{height:30px;border-right:1px solid var(--line);margin:0 3px}.period{border:1px solid var(--line);border-radius:9px;padding:9px 12px;color:#526176;background:#fff;font-size:12px}.content{max-width:1600px;margin:auto;padding:30px 34px 42px}.page-head{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:24px}.eyebrow{color:var(--teal);font-size:11px;font-weight:700;letter-spacing:.2px;display:flex;align-items:center;gap:7px}.live-dot{width:7px;height:7px;background:#2ba58c;border-radius:50%;box-shadow:0 0 0 4px #e0f3ed}.page-head h1{font-size:27px;letter-spacing:-.7px;margin:8px 0 7px;font-weight:700}.page-head p{margin:0;color:var(--muted);font-size:12px}.head-actions{display:flex;gap:9px;align-items:center}.btn{border:1px solid var(--line);background:#fff;color:#34465b;border-radius:9px;padding:10px 14px;font-size:12px;font-weight:600;display:inline-flex;align-items:center;justify-content:center;gap:8px}.btn-primary{background:var(--navy);border-color:var(--navy);color:#fff}.btn-primary:hover{background:#20364d}.btn .plus{font-size:18px;line-height:10px}.demo-note{display:flex;gap:10px;align-items:center;background:#fff9e9;border:1px solid #f2dfac;color:#77571b;padding:10px 13px;border-radius:9px;font-size:11px;margin-bottom:19px}.demo-note b{white-space:nowrap}.demo-note span{color:#8d7443}.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin-bottom:17px}.kpi{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:18px 19px;box-shadow:var(--shadow);min-width:0}.kpi-top{display:flex;justify-content:space-between;align-items:center;gap:8px}.kpi-label{color:var(--muted);font-size:11px}.kpi-icon{width:33px;height:33px;border-radius:9px;background:#eff3f7;display:grid;place-items:center;color:#49627e;font-size:16px}.kpi-value{font-family:Inter,'IBM Plex Sans Arabic',sans-serif;font-size:29px;font-weight:700;letter-spacing:-1px;margin:12px 0 8px;direction:ltr;text-align:right}.kpi-foot{display:flex;align-items:center;gap:6px;font-size:10px;color:var(--muted)}.trend{color:#16836f;background:#e6f5ef;border-radius:5px;padding:3px 6px;font-weight:700}.trend.warn{color:#a56c16;background:#fff2d7}.kpi-line{height:3px;background:#edf0f4;border-radius:4px;margin-top:13px;overflow:hidden}.kpi-line span{display:block;height:100%;border-radius:4px;background:var(--teal)}.grid-main{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(310px,1fr);gap:17px;margin-bottom:17px}.panel{background:#fff;border:1px solid var(--line);border-radius:13px;box-shadow:var(--shadow);min-width:0}.panel-head{padding:18px 20px 14px;display:flex;align-items:flex-start;justify-content:space-between;gap:12px}.panel-title{font-size:14px;font-weight:700;margin:0 0 5px}.panel-sub{color:var(--muted);font-size:10px}.tiny-select{border:1px solid var(--line);background:#fff;border-radius:7px;color:#5e6e80;padding:7px 9px;font-size:10px}.chart-wrap{padding:0 18px 16px}.chart-legend{display:flex;gap:16px;color:var(--muted);font-size:10px;margin:0 0 4px}.legend-dot{display:inline-block;width:7px;height:7px;border-radius:2px;margin-left:5px}.chart-svg{width:100%;height:auto;display:block;overflow:visible}.chart-svg text{font-family:Inter,'IBM Plex Sans Arabic',sans-serif;font-size:10px;fill:#8491a1}.chart-foot{display:flex;justify-content:space-between;gap:12px;border-top:1px solid #edf0f3;padding-top:13px;margin-top:3px;color:var(--muted);font-size:10px}.chart-foot strong{color:var(--ink)}.ai-panel{background:var(--navy);color:#fff;border-radius:13px;overflow:hidden;position:relative}.ai-panel:before{content:"";position:absolute;width:220px;height:220px;border:1px solid #31485c;border-radius:50%;top:-130px;left:-60px;box-shadow:0 0 0 28px rgba(255,255,255,.018),0 0 0 58px rgba(255,255,255,.015)}.ai-panel .panel-head{position:relative;padding-bottom:10px}.ai-heading{display:flex;gap:10px;align-items:center}.ai-mark{width:34px;height:34px;background:var(--lime);color:var(--navy);border-radius:10px;display:grid;place-items:center;font-size:18px;font-weight:800}.ai-panel .panel-title{color:#fff}.ai-panel .panel-sub{color:#9fb0c3}.ai-badge{font-size:9px;color:var(--lime);border:1px solid #506045;padding:4px 7px;border-radius:5px}.ai-content{padding:4px 20px 20px;position:relative}.ai-summary{font-size:13px;line-height:1.95;color:#e1e8f0;margin:5px 0 16px}.ai-summary strong{color:var(--lime);font-weight:600}.insight{display:flex;gap:10px;padding:12px 0;border-top:1px solid #2a3c50}.insight-icon{flex-shrink:0;width:27px;height:27px;border-radius:8px;background:#263b4d;display:grid;place-items:center;color:#ffcc77}.insight strong{display:block;font-size:11px;margin:0 0 4px;color:#f2f5f8}.insight p{font-size:10px;line-height:1.8;color:#a9b8c8;margin:0}.ai-footer{display:flex;align-items:center;justify-content:space-between;margin-top:11px;gap:8px}.ai-footer small{color:#8195aa;font-size:9px}.ai-action{border:0;background:var(--lime);color:var(--navy);font-size:10px;font-weight:700;border-radius:7px;padding:9px 11px}.lower-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(290px,1fr);gap:17px}.table-tools{display:flex;align-items:center;gap:8px}.search{width:150px;max-width:35vw;border:1px solid var(--line);border-radius:7px;padding:8px 10px;font-size:10px;outline:none}.search:focus{border-color:#79b8bb}.table-scroll{overflow:auto}table{width:100%;border-collapse:collapse;white-space:nowrap}th{font-size:10px;color:#8491a1;text-align:right;font-weight:500;background:#fafbfd;padding:12px 18px;border-top:1px solid #edf0f3;border-bottom:1px solid #edf0f3}td{font-size:11px;padding:14px 18px;border-bottom:1px solid #f0f2f5}tr:last-child td{border-bottom:0}.project-name{font-weight:700;color:#2a3b4f}.project-code{display:block;font-size:9px;color:#94a0ae;margin-top:4px;direction:ltr;text-align:right}.pill{display:inline-flex;align-items:center;gap:5px;border-radius:20px;padding:5px 8px;font-size:9px;font-weight:600}.pill:before{content:"";width:5px;height:5px;border-radius:50%;background:currentColor}.pill.good{background:#e8f6ef;color:#218267}.pill.watch{background:#fff4df;color:#a56b16}.pill.risk{background:#fceaea;color:#b74747}.progress-cell{display:flex;align-items:center;gap:8px}.progress{height:5px;background:#edf0f4;border-radius:6px;width:54px;overflow:hidden}.progress span{display:block;height:100%;background:#168c8b;border-radius:6px}.progress-cell small{color:#66778b;font-size:10px;direction:ltr}.view-all{border:0;background:transparent;color:var(--teal);font-size:10px;font-weight:700;padding:12px 18px}.risk-list{padding:0 18px 10px}.risk-item{display:grid;grid-template-columns:30px minmax(0,1fr) auto;gap:10px;align-items:start;padding:14px 0;border-bottom:1px solid #f0f2f5}.risk-item:last-child{border-bottom:0}.risk-symbol{width:29px;height:29px;border-radius:8px;background:#fff0e6;color:#bd6c38;display:grid;place-items:center}.risk-symbol.red{background:#fdeaea;color:#bd4b4b}.risk-symbol.blue{background:#eaf0ff;color:#456fca}.risk-item strong{display:block;font-size:11px;margin:1px 0 4px}.risk-item p{font-size:10px;color:var(--muted);margin:0;line-height:1.8}.risk-meta{font-size:9px;color:#8c99a7;white-space:nowrap}.risk-bottom{padding:0 18px 15px}.risk-bottom .btn{width:100%;font-size:10px;padding:9px}.footer{display:flex;justify-content:space-between;gap:12px;color:#9aa5b2;font-size:10px;padding:22px 2px 0}.footer strong{color:#66768a}.toast{position:fixed;bottom:22px;left:22px;background:#15283b;color:#fff;padding:13px 17px;border-radius:10px;box-shadow:0 12px 35px #0c1b2c30;z-index:10;opacity:0;transform:translateY(10px);pointer-events:none;transition:.25s;font-size:12px;max-width:calc(100vw - 40px)}.toast.show{opacity:1;transform:translateY(0)}.mobile-menu{display:none}
+@media(max-width:1180px){.shell{grid-template-columns:220px minmax(0,1fr)}.content{padding:25px 22px}.topbar{padding:0 22px}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-main{grid-template-columns:minmax(0,1.2fr) minmax(290px,1fr)}}
+@media(max-width:900px){.shell{grid-template-columns:1fr}.sidebar{position:fixed;z-index:20;top:0;bottom:0;right:0;width:260px;transform:translateX(105%);transition:transform .25s;box-shadow:-10px 0 30px #0002}.sidebar.open{transform:translateX(0)}.mobile-menu{display:inline-grid}.grid-main,.lower-grid{grid-template-columns:1fr}.topbar{height:65px}.page-head h1{font-size:24px}}
+@media(max-width:560px){.content{padding:20px 13px}.topbar{padding:0 13px}.period{display:none}.page-head{display:block}.head-actions{margin-top:16px}.head-actions .btn{flex:1}.kpis{gap:9px}.kpi{padding:13px}.kpi-value{font-size:25px}.kpi-label{font-size:10px}.kpi-icon{width:29px;height:29px}.panel-head{padding:15px 14px 12px}.chart-wrap{padding:0 10px 13px}.ai-content{padding:4px 15px 16px}.footer{display:block;line-height:2}.search{width:120px}.table-tools .tiny-select{display:none}}
+</style>
 </head>
-
 <body>
-
-  <div class="container">
-
-    <nav>
-      <div class="logo">FieldOps Pro</div>
-      <div class="status">Prototype / Pre-MVP</div>
-    </nav>
-
-    <header>
-      <div class="eyebrow">Construction Technology</div>
-      <h1>Construction Operations. Connected.</h1>
-
-      <p class="hero-text">
-        FieldOps Pro is a construction operations platform designed to bring critical
-        field workflows into one connected environment — helping project teams improve
-        visibility, coordination, compliance and decision-making.
-      </p>
-
-      <div class="tagline">
-        From field activity to management insight — in one platform.
-      </div>
-    </header>
-
-    <section>
-      <h2>The Problem</h2>
-
-      <p>
-        Large construction projects rely on multiple contractors, consultants,
-        documents, approvals, inspections and field processes. When these workflows
-        operate across disconnected systems, spreadsheets, emails and manual processes,
-        project teams can face delays, fragmented information, limited visibility and
-        unnecessary rework.
-      </p>
-    </section>
-
-    <section>
-      <h2>Our Solution</h2>
-
-      <p>
-        FieldOps Pro is being designed as a unified digital environment for construction
-        field operations, connecting key workflows and project information across teams.
-      </p>
-
-      <div class="grid">
-
-        <div class="card">
-          <h3>Permit Management</h3>
-          <p>Coordinate permit requests, approvals and field status.</p>
-        </div>
-
-        <div class="card">
-          <h3>Safety & HSE</h3>
-          <p>Support inspections, observations and hazard tracking.</p>
-        </div>
-
-        <div class="card">
-          <h3>RFI Management</h3>
-          <p>Improve visibility across technical questions and responses.</p>
-        </div>
-
-        <div class="card">
-          <h3>Document Tracking</h3>
-          <p>Connect project documents with field execution.</p>
-        </div>
-
-        <div class="card">
-          <h3>Meeting & Action Tracking</h3>
-          <p>Capture decisions, responsibilities and follow-up actions.</p>
-        </div>
-
-        <div class="card">
-          <h3>Project Dashboards</h3>
-          <p>Provide management-level visibility into field operations.</p>
-        </div>
-
-        <div class="card">
-          <h3>Cost & Document Analytics</h3>
-          <p>Transform project information into actionable insight.</p>
-        </div>
-
-        <div class="card">
-          <h3>Rework Prevention</h3>
-          <p>Identify operational signals that may contribute to preventable rework.</p>
-        </div>
-
-      </div>
-    </section>
-
-    <section>
-      <h2>Built for Complex Construction Projects</h2>
-
-      <div class="grid">
-
-        <div class="card"><h3>Developers</h3></div>
-        <div class="card"><h3>PMC Organizations</h3></div>
-        <div class="card"><h3>Main Contractors</h3></div>
-        <div class="card"><h3>Infrastructure Projects</h3></div>
-        <div class="card"><h3>Mega & Giga Projects</h3></div>
-        <div class="card"><h3>Government Programs</h3></div>
-
-      </div>
-    </section>
-
-    <section>
-      <h2>Current Stage</h2>
-
-      <p>
-        FieldOps Pro currently has an extensive UX/UI prototype covering core
-        construction workflows and is progressing toward MVP development and
-        industry validation.
-      </p>
-
-      <div class="stage">Prototype / Pre-MVP</div>
-    </section>
-
-    <section>
-      <h2>Our Vision</h2>
-
-      <p>
-        To create an intelligent operating layer for construction projects that
-        connects field execution, project information, risk signals and management
-        decisions.
-      </p>
-    </section>
-
-    <section>
-      <h2>Company</h2>
-
-      <div class="company">
-        <p><strong>Gulf Industrial Tech LLC</strong></p>
-        <p>Technology & Construction Innovation</p>
-        <br>
-        <p><strong>Product:</strong> FieldOps Pro</p>
-        <p><strong>Stage:</strong> Prototype / Pre-MVP</p>
-      </div>
-    </section>
-
-    <footer>
-      © 2026 Gulf Industrial Tech LLC. FieldOps Pro.
-    </footer>
-
-  </div>
-
-</body>
-</html>
+<div class="shell">
+<aside class="sidebar" id="sidebar">
+  <div class="brand"><div class="brand-mark">F.</div><div><div class="brand-name">FIELDOPS <span>PRO</span></div><div class="brand-caption">INTELLIGENCE FOR THE BUILT WORLD</div></div></div>
+  <div class="workspace"><div class="workspace-icon">G</div><div><small>مساحة العمل</small><strong>Gulf Industrial Tech</strong></div><span class="chevron">⌄</span></div>
+  <div><div class="nav-label">مركز القيادة</div><nav class="nav" aria-label="التنقل الرئيسي">
+    <button class="active" data-view="overview"><span class="ico">◫</span>نظرة تنفيذية</button>
+    <button data-view="projects"><span class="ico">▦</span>المشاريع والمحافظ</button>
+    <button data-view="field"><span class="ico">⌖</span>عمليات الميدان <span class="count">12</span></button>
+    <button data-view="safety"><span class="ico">⬡</span>السلامة والمخاطر</button>
+    <button data-view="documents"><span class="ico">▤</span>المستندات الذكية</button>
+    <button data-view="actions"><span class="ico">☷</span>القرارات والإجراءات</button>
+  </nav></div>
+  <div><div class="nav-label">الذكاء والتحليلات</div><nav class="nav">
+    <button data-view="insights"><span class="ico">✳</span>مساعد FieldOps AI <span class="count">AI</span></button>
+    <button data-view="reports"><span class="ico">⌁</span>التقارير والتوقعات</button>
+  </nav></div>
+  <div class="side-bottom"><div class="ai-side"><span class="spark">✳</span><strong>من البيانات إلى القرار</strong><p>حوّل تحديثات الميدان والتقارير إلى ملخص تنفيذي واضح مع مصادر ومؤشرات ثقة.</p><button class="side-cta" id="askSide">اسأل مساعد الذكاء الاصطناعي ↗</button></div><div class="profile"><div class="avatar">GM</div><div><strong>مدير المحفظة</strong><small>صلاحيات الإدارة · عرض تجريبي</small></div></div></div>
+</aside>
+<main class="main">
+<header class="topbar"><div style="display:flex;align-items:center;gap:12px"><button class="icon-btn mobile-menu" id="menuBtn" aria-label="فتح القائمة">☰</button><div class="crumb">مركز القيادة <span style="margin:0 7px;color:#c2cbd5">/</span> <b id="crumbTitle">نظرة تنفيذية</b></div></div><div class="top-actions"><button class="period" id="periodBtn">آخر 30 يومًا　⌄</button><button class="icon-btn" id="searchBtn" aria-label="بحث">⌕</button><button class="icon-btn" id="notifyBtn" aria-label="التنبيهات">♧<span class="dot"></span></button><div class="top-divider"></div><div class="avatar">GM</div></div></header>
+<div class="content">
+  <div class="page-head"><div><div class="eyebrow"><span class="live-dot"></span> مركز العمليات · بيانات توضيحية</div><h1 id="pageTitle">صورة المشروع، قبل أن تصبح مشكلة.</h1><p>صباح الخير. هذه أهم الإشارات التي تستحق انتباهك اليوم.</p></div><div class="head-actions"><button class="btn" id="exportBtn">⇩　تصدير الملخص</button><button class="btn btn-primary" id="newAction"><span class="plus">＋</span> إجراء جديد</button></div></div>
+  <div class="demo-note"><b>ⓘ نموذج تفاعلي ببيانات افتراضية</b><span>الأرقام والمخاطر أدناه للعرض فقط وليست بيانات مشاريع حقيقية. لم يتم ربط مصادر بيانات أو نماذج ذكاء اصطناعي بعد.</span></div>
+  <section class="kpis" aria-label="مؤشرات المحفظة">
+    <article class="kpi"><div class="kpi-top"><span class="kpi-label">قيمة المحفظة الإجمالية</span><span class="kpi-icon">◈</span></div><div class="kpi-value">SAR 2.84B</div><div class="kpi-foot"><span class="trend">↑ 4.2%</span><span>مقارنة بالفترة السابقة</span></div><div class="kpi-line"><span style="width:76%"></span></div></article>
+    <article class="kpi"><div class="kpi-top"><span class="kpi-label">مؤشر الإنجاز المخطط / الفعلي</span><span class="kpi-icon">◷</span></div><div class="kpi-value">78.6%</div><div class="kpi-foot"><span class="trend warn">− 2.4 نقطة</span><span>فجوة عن الخطة</span></div><div class="kpi-line"><span style="width:79%;background:#c48a2c"></span></div></article>
+    <article class="kpi"><div class="kpi-top"><span class="kpi-label">التزامات تحتاج قرارًا</span><span class="kpi-icon">⚑</span></div><div class="kpi-value">12 <span style="font-size:13px;color:#8a97a6;letter-spacing:0">عنصرًا</span></div><div class="kpi-foot"><span class="trend warn">5 عالية الأولوية</span><span>عبر 3 مشاريع</span></div><div class="kpi-line"><span style="width:42%;background:#c48a2c"></span></div></article>
+    <article class="kpi"><div class="kpi-top"><span class="kpi-label">مؤشر السلامة المبدئي</span><span class="kpi-icon">⬡</span></div><div class="kpi-value">94.2<span style="font-size:17px">/100</span></div><div class="kpi-foot"><span class="trend">↑ 1.8 نقطة</span><span>مؤشر توضيحي لا يغني عن سجل HSE</span></div><div class="kpi-line"><span style="width:94%;background:#2b9a7b"></span></div></article>
+  </section>
+  <section class="grid-main">
+    <article class="panel"><div class="panel-head"><div><h2 class="panel-title">نبض المحفظة</h2><div class="panel-sub">الإنجاز التراكمي مقابل الخطة الأساسية · نسبة مئوية</div></div><select class="tiny-select" id="chartRange" aria-label="الفترة الزمنية"><option value="6">آخر 6 أشهر</option><option value="4">آخر 4 أشهر</option><option value="3">آخر 3 أشهر</option></select></div><div class="chart-wrap"><div class="chart-legend"><span><i class="legend-dot" style="background:#087f8c"></i>الإنجاز الفعلي</span><span><i class="legend-dot" style="background:#b9c5d1"></i>الخطة الأساسية</span></div><svg class="chart-svg" viewBox="0 0 600 235" role="img" aria-label="رسم توضيحي لمقارنة الإنجاز الفعلي بالخطة"><defs><linearGradient id="area" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#087f8c" stop-opacity=".18"/><stop offset="1" stop-color="#087f8c" stop-opacity="0"/></linearGradient></defs><g stroke="#edf0f4" stroke-width="1"><line x1="44" y1="25" x2="580" y2="25"/><line x1="44" y1="68" x2="580" y2="68"/><line x1="44" y1="111" x2="580" y2="111"/><line x1="44" y1="154" x2="580" y2="154"/><line x1="44" y1="197" x2="580" y2="197"/></g><g><text x="35" y="29" text-anchor="end">100%</text><text x="35" y="72" text-anchor="end">75%</text><text x="35" y="115" text-anchor="end">50%</text><text x="35" y="158" text-anchor="end">25%</text><text x="35" y="201" text-anchor="end">0%</text></g><path id="actualArea" d="M50 174 L150 154 L250 128 L350 105 L450 87 L560 62 L560 197 L50 197Z" fill="url(#area)"/><path id="planLine" d="M50 168 L150 145 L250 118 L350 91 L450 69 L560 48" fill="none" stroke="#b9c5d1" stroke-width="2.5" stroke-dasharray="5 5" stroke-linecap="round"/><path id="actualLine" d="M50 174 L150 154 L250 128 L350 105 L450 87 L560 62" fill="none" stroke="#087f8c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><g fill="#087f8c" stroke="#fff" stroke-width="2"><circle cx="50" cy="174" r="4"/><circle cx="150" cy="154" r="4"/><circle cx="250" cy="128" r="4"/><circle cx="350" cy="105" r="4"/><circle cx="450" cy="87" r="4"/><circle cx="560" cy="62" r="4"/></g><g text-anchor="middle"><text x="50" y="220">مايو</text><text x="150" y="220">يونيو</text><text x="250" y="220">يوليو</text><text x="350" y="220">أغسطس</text><text x="450" y="220">سبتمبر</text><text x="560" y="220">أكتوبر</text></g></svg><div class="chart-foot"><span>الفجوة الحالية عن الخطة <strong style="color:#b7791f">−2.4 نقطة</strong></span><span>آخر تحديث: <strong>بيانات تجريبية</strong></span></div></div></article>
+    <article class="ai-panel"><div class="panel-head"><div class="ai-heading"><div class="ai-mark">✳</div><div><h2 class="panel-title">Executive Brief</h2><div class="panel-sub">ملخص تنفيذي · نموذج توضيحي</div></div></div><span class="ai-badge">AI CONCEPT</span></div><div class="ai-content"><p class="ai-summary">المحفظة تسير بإجمالي إنجاز <strong>78.6%</strong>، لكن فجوة الخطة البالغة <strong>2.4 نقطة</strong> تستدعي متابعة موجهة. الأولوية المقترحة هي إغلاق الالتزامات الحرجة والتحقق من أثرها على المسار الحرج قبل اجتماع التقدم القادم.</p><div class="insight"><div class="insight-icon">↗</div><div><strong>فرصة لخفض التأخير</strong><p>راجع الإجراءات المتأخرة في مشروعين، واربط كل إجراء بمالك وتاريخ استحقاق موثق.</p></div></div><div class="insight"><div class="insight-icon">◈</div><div><strong>قرار مطلوب من الإدارة</strong><p>تحقق من حالة 5 التزامات عالية الأولوية وأثرها المالي قبل اعتماد أي تصعيد.</p></div></div><div class="insight"><div class="insight-icon">✓</div><div><strong>ضابط موثوقية</strong><p>كل استنتاج إنتاجي يجب أن يرتبط بمصدر وتاريخ ودرجة ثقة؛ لا تُعرض التوصية كحقيقة مؤكدة.</p></div></div><div class="ai-footer"><small>المحتوى توضيحي وغير مولّد من بيانات فعلية.</small><button class="ai-action" id="askAI">اسأل عن المحفظة ↗</button></div></div></article>
+  </section>
+  <section class="lower-grid">
+    <article class="panel"><div class="panel-head"><div><h2 class="panel-title">المشاريع تحت المتابعة</h2><div class="panel-sub">نظرة موحدة على التقدم والإشارات التي تتطلب انتباهًا</div></div><div class="table-tools"><input id="projectSearch" class="search" placeholder="ابحث عن مشروع..." aria-label="ابحث عن مشروع"><select id="statusFilter" class="tiny-select" aria-label="تصفية الحالة"><option value="all">كل الحالات</option><option value="risk">تحتاج تدخلًا</option><option value="watch">تحت المراقبة</option><option value="good">على المسار</option></select></div></div><div class="table-scroll"><table><thead><tr><th>المشروع</th><th>الإنجاز</th><th>الحالة</th><th>الميزانية</th></tr></thead><tbody id="projectRows">
+<tr data-status="risk"><td><span class="project-name">مجمع البنية التحتية الشمالية</span><span class="project-code">PRJ-024 · INFRA</span></td><td><div class="progress-cell"><div class="progress"><span style="width:62%"></span></div><small>62%</small></div></td><td><span class="pill risk">تحتاج تدخلًا</span></td><td>−3.8%</td></tr>
+<tr data-status="watch"><td><span class="project-name">مركز الخدمات اللوجستية</span><span class="project-code">PRJ-018 · LOG</span></td><td><div class="progress-cell"><div class="progress"><span style="width:79%"></span></div><small>79%</small></div></td><td><span class="pill watch">تحت المراقبة</span></td><td>+1.2%</td></tr>
+<tr data-status="good"><td><span class="project-name">مبنى المرافق المركزية</span><span class="project-code">PRJ-031 · FAC</span></td><td><div class="progress-cell"><div class="progress"><span style="width:91%"></span></div><small>91%</small></div></td><td><span class="pill good">على المسار</span></td><td>+0.4%</td></tr>
+<tr data-status="risk"><td><span class="project-name">شبكة المرافق — المرحلة الثانية</span><span class="project-code">PRJ-027 · UTIL</span></td><td><div class="progress-cell"><div class="progress"><span style="width:54%"></span></div><small>54%</small></div></td><td><span class="pill risk">تحتاج تدخلًا</span></td><td>−2.1%</td></tr>
+</tbody></table></div><button class="view-all" id="allProjects">عرض سجل المشاريع الكامل ←</button></article>
+    <article class="panel"><div class="panel-head"><div><h2 class="panel-title">إشارات تستحق الانتباه</h2><div class="panel-sub">أمثلة تجريبية على رصد المخاطر مبكرًا</div></div><span class="pill risk">3 مفتوحة</span></div><div class="risk-list"><div class="risk-item"><div class="risk-symbol red">!</div><div><strong>اعتماد فني متأخر</strong><p>قد يؤثر في تسلسل الأعمال — يلزم التحقق من المسار الحرج والمالك المسؤول.</p></div><span class="risk-meta">PRJ-024</span></div><div class="risk-item"><div class="risk-symbol">◷</div><div><strong>إجراء اجتماع تجاوز الاستحقاق</strong><p>لم يُسجل إغلاق موثق في العينة التجريبية.</p></div><span class="risk-meta">PRJ-018</span></div><div class="risk-item"><div class="risk-symbol blue">▤</div><div><strong>مستند يحتاج مراجعة</strong><p>تحقق من رقم الإصدار والاعتماد قبل استخدامه في الموقع.</p></div><span class="risk-meta">PRJ-027</span></div></div><div class="risk-bottom"><button class="btn" id="riskBtn">فتح سجل المخاطر والإجراءات ↗</button></div></article>
+  </section>
+  <footer class="footer"><span><strong>FIELDOPS PRO</strong> · ذكاء تشغيلي لبيئة البناء</span><span>نسخة تصورية 0.1 · بيانات تجريبية · © 2026 Gulf Industrial Tech LLC</span></footer>
+</div>
+</main>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+const toast=document.getElementById('toast');let toastTimer;
+function notify(message){toast.textContent=message;toast.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('show'),3200)}
+const titles={overview:['نظرة تنفيذية','صورة المشروع، قبل أن تصبح مشكلة.'],projects:['المشاريع والمحافظ','كل مشروع في صورة واحدة قابلة للفهم.'],field:['عمليات الميدان','من طلب العمل إلى الإغلاق الموثق.'],safety:['السلامة والمخاطر','رصد الإشارات مبكرًا، قبل أن تتحول إلى حوادث.'],documents:['المستندات الذكية','المعلومة الصحيحة، بالإصدار الصحيح، في الوقت المناسب.'],actions:['القرارات والإجراءات','مسؤول واضح، موعد محدد، وإغلاق يمكن التحقق منه.'],insights:['مساعد FieldOps AI','اسأل عن المشروع؛ اطلب الدليل؛ واتخذ قرارًا أوضح.'],reports:['التقارير والتوقعات','حوّل التفاصيل التشغيلية إلى صورة تنفيذية قابلة للتصرف.']};
+document.querySelectorAll('[data-view]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('[data-view]').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const t=titles[btn.dataset.view];document.getElementById('crumbTitle').textContent=t[0];document.getElementById('pageTitle').textContent=t[1];document.getElementById('sidebar').classList.remove('open');if(btn.dataset.view!=='overview')notify('هذه الوحدة ضمن خارطة الطريق. المعروض حاليًا نموذج تفاعلي للوحة القيادة.')}));document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('sidebar').classList.toggle('open'));
+document.getElementById('projectSearch').addEventListener('input',filterProjects);document.getElementById('statusFilter').addEventListener('change',filterProjects);
+function filterProjects(){const q=document.getElementById('projectSearch').value.trim().toLowerCase(),s=document.getElementById('statusFilter').value;document.querySelectorAll('#projectRows tr').forEach(r=>{r.hidden=!r.textContent.toLowerCase().includes(q)||(s!=='all'&&r.dataset.status!==s)})}
+document.getElementById('chartRange').addEventListener('change',e=>{const v=e.target.value;const lines={6:{actual:'M50 174 L150 154 L250 128 L350 105 L450 87 L560 62',plan:'M50 168 L150 145 L250 118 L350 91 L450 69 L560 48',area:'M50 174 L150 154 L250 128 L350 105 L450 87 L560 62 L560 197 L50 197Z'},4:{actual:'M50 154 L220 128 L390 105 L560 62',plan:'M50 145 L220 118 L390 91 L560 48',area:'M50 154 L220 128 L390 105 L560 62 L560 197 L50 197Z'},3:{actual:'M50 128 L305 105 L560 62',plan:'M50 118 L305 91 L560 48',area:'M50 128 L305 105 L560 62 L560 197 L50 197Z'}}[v];document.getElementById('actualLine').setAttribute('d',lines.actual);document.getElementById('planLine').setAttribute('d',lines.plan);document.getElementById('actualArea').setAttribute('d',lines.area);notify('تم تحديث نطاق الرسم. القيم المعروضة تجريبية.')});
+document.getElementById('askAI').addEventListener('click',()=>notify('مساعد الذكاء الاصطناعي يحتاج ربط نموذج معتمد ومصادر بيانات موثوقة قبل تفعيل الإجابات الإنتاجية.'));document.getElementById('askSide').addEventListener('click',()=>{document.querySelector('[data-view="insights"]').click();notify('واجهة المساعد جاهزة للتصميم؛ لم يتم توصيل نموذج ذكاء اصطناعي بعد.')});
+document.getElementById('newAction').addEventListener('click',()=>notify('إنشاء الإجراءات سيكون ضمن وحدة إدارة المهام بعد ربط قاعدة البيانات والصلاحيات.'));document.getElementById('notifyBtn').addEventListener('click',()=>notify('التنبيهات الظاهرة أمثلة توضيحية وليست مرتبطة بنظام حي.'));document.getElementById('searchBtn').addEventListener('click',()=>{document.getElementById('projectSearch').focus();document.getElementById('projectSearch').scrollIntoView({behavior:'smooth',block:'center'})});document.getElementById('periodBtn').addEventListener('click',()=>notify('اختيار الفترة الزمنية سيُربط ببيانات النظام في المرحلة التالية.'));document.getElementById('allProjects').addEventListener('click',()=>{document.querySelector('[data-view="projects"]').click()});document.getElementById('riskBtn').addEventListener('click',()=>{document.querySelector('[data-view="safety"]').click()});
+document.getElementById('exportBtn').addEventListener('click',()=>{const report=['FIELDOPS PRO — الملخص التنفيذي التجريبي','تنبيه: جميع الأرقام أدناه بيانات افتراضية للعرض وليست بيانات فعلية.','','قيمة المحفظة: SAR 2.84B','الإنجاز الفعلي: 78.6%','الفجوة عن الخطة: -2.4 نقطة','التزامات تحتاج قرارًا: 12 (منها 5 عالية الأولوية)','مؤشر السلامة التوضيحي: 94.2/100','','المشاريع التجريبية:','- مجمع البنية التحتية الشمالية: 62% — تحتاج تدخلًا','- مركز الخدمات اللوجستية: 79% — تحت المراقبة','- مبنى المرافق المركزية: 91% — على المسار','- شبكة المرافق — المرحلة الثانية: 54% — تحتاج تدخلًا','','لا تستخدم هذا التقرير لاتخاذ قرارات تشغيلية أو مالية.'].join('\n');const blob=new Blob(['\ufeff'+report],{type:'text/plain;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='fieldops-executive-brief-demo.txt';a.click();URL.revokeObjectURL(url);notify('تم تنزيل ملخص تجريبي مع توضيح أن البيانات افتراضية.')});
+</script>
+</body></html>
